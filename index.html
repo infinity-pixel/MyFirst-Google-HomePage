@@ -5,134 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Home Page</title>
     <link rel="stylesheet" href="styles.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <!-- ========== Header Section Start ========== -->
-    <section class="header-area">
-        <header class="header">
-            <nav class="header__navbar">
-                <div class="header__navbar-gmail">
-                    <span>
-                        Gmail
-                    </span>
-                </div>
-                <div class="header__navbar-images">
-                    <span>
-                        Images
-                    </span>
-                </div>
-                <div class="header__navbar-googleapps">
-                    <i class="material-symbols-outlined">
-                        apps
-                    </i>
-                </div>
-                <div class="header__navbar-button">
-                    <button>
-                        Sign in
-                    </button>
-                </div>
-            </nav>
+    <section>
+        <!-----------------Header Start------------------------>
+        <header>
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="Google Labs.png" alt="Google Labs" width="20px"></a></li>
+
+                <li><a href="#"><img src="Google Apps.png" alt="Google Apps" width="27px"></a></li>
+
+                <li><button>Sing In</button></li>
+            </ul>
         </header>
-    </section>
-    <!-- ========== Header Section End ========== -->
 
-    <!-- ========== Main Section Start ========== -->
-    <section class="main-area">
-        <main class="main">
-            <div class="main__google">
-                <img src="Google.png" alt="Google">
+        <!-----------------------Main Start------------------------->
+        <main>
+            <div>
+                <img class="google" src="Google.png" alt="Google">
             </div>
-            <div class="main__box">
-                <div class="main__box-serch">
-                    <img src="Search.png" alt="Search" width="50px">
-                </div>
-                <div class="main__box-input">
-                    <input type="text">
-                </div>
-                <div class="main__box-keyboard">
-                    <i class="material-symbols-outlined">
-                        keyboard
-                    </i>
-                </div>
-                <div class="main__box-mic">
-                    <img src="Google Mic.png" alt="Google Mic" width="50px">
-                </div>
-                <div class="main__box-lens">
-                    <img src="Google Lens.png" alt="Google Lens" width="50px">
-                </div>
+            
+            <div class="searchbox">
+
+                <input type="text">
+
+                <div class="share"><img src="Share.png" alt="share" width="20px" title="Share"></div>
+              
+                <div class="search"><img src="Search.png" alt="search" width="20px"></div>
+
+                <div class="mic"><img src="Google Mic.png" alt="Gmic" width="30px" title="Search by voice"></div>
+
+                <div class="lens"><img src="Google Lens.png" alt="Glens" width="23px" title="Search by image"></div>
+                
             </div>
-            <div class="main__buttons">
-                <div class="main__buttons-button1">
-                    <button>
-                        <p>
-                            Google Search
-                        </p>
-                    </button>
-                </div>
-                <div class="main__buttons-button2">
-                    <button>
-                        <p>
-                            Feeling lucky
-                        </p>
-                    </button>
-                </div>
+            
+            <div class="button1">
+                <button>Google Search</button>
             </div>
-            <div class="main__line">
-                <p>
-                    Google is available in: <a href="#">English</a>
-                </p>
+            <div class="button2">
+                <button>I'm Feeling Lucky</button>
             </div>
+            <div class="button3">
+                Google Offered in: <a href="#">বাংলা</a>
+            </div>
+
         </main>
-    </section>
-    <!-- ========== Main Section End ========== -->
 
-    <!-- ========== Footer Section Start ========== -->
-    <section class="footer-area">
-        <footer class="footers">
-            <div class="footers__footer1">
-                <p>
-                    Bangladesh
-                </p>
-            </div>
-
-            <div class="footers__footer2">
-                <div class="footers__footer2-left">
-                    <div class="footers__footer2-left1">
-                        <span>About</span>
+        <footer>
+            <div class="footer1"><p>Bangladesh</p></div>
+            <div class="footer2">
+                <ul>
+                    <div class="left">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">advertising</a></li>
+                        <li><a href="#">business</a></li>
+                        <li><a href="#">how search works</a></li>
                     </div>
-                    <div class="footers__footer2-left2">
-                        <span>Advertisements</span>
+                    <div class="right">
+                        <li><a href="#">privacy</a></li>
+                        <li><a href="#">terms</a></li>
+                        <li><a href="#">settings</a></li>
                     </div>
-                    <div class="footers__footer2-left3">
-                        <span>Business</span>
-                    </div>
-                    <div class="footers__footer2-left4">
-                        <span>How Search Works</span>
-                    </div>
-                </div>
-
-                <div class="footers__footer2-right">
-                    <div class="footers__footer2-right1">
-                        <span>
-                            Privacy
-                        </span>
-                    </div>
-                    <div class="footers__footer2-right2">
-                        <span>
-                            Terms and Conditions
-                        </span>
-                    </div>
-                    <div class="footers__footer2-right3">
-                        <span>
-                            Settings
-                        </span>
-                    </div>
-                </div>
+                </ul>
             </div>
         </footer>
     </section>
-    <!-- ========== Footer Section End ========== -->
 </body>
 </html>
