@@ -1,3 +1,4 @@
+/* ========= Global Section Start =========*/
 body{
     display: flex;
     flex-direction: column;
@@ -5,8 +6,14 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
+
+/* ========= Global Section Start =========*/
+
+
+/* ========= Section Area Part =========*/
 .header-area{
     height: 50px;
     align-content: center;
@@ -14,33 +21,117 @@ body{
 }
 .main-area{
     flex-grow: 2.6;
+    align-content: center;
 }
 .footer-area{
     flex-grow: 0.2;
 }
+/* ========= Section Area Part =========*/
+
+/* ========= Header Section Start =========*/
 .header{
     display: flex;
     justify-content: end;
     align-content: center;
 }
 .header__navbar{
-    width: 30%;
+    width: 300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
+.header__navbar-button--style{
+    padding: 10px 20px;
+    background-color: skyblue;
+    border-radius: 20px;
+    font-weight: 400;
+}
+.header__navbar-button--style:hover{
+    background-color: rgb(103, 196, 233);
+    box-shadow: 3px 3px 9px rgb(200, 192, 192), -3px -3px 9px rgb(200, 192, 192), 3px -3px 9px rgb(200, 192, 192), -3px 3px 9px rgb(200, 192, 192);
+    cursor: pointer;
+}
+/* ========= Header Section End =========*/
+
+
+/* ========= Main Section Start =========*/
 .main{
     display: flex;
     flex-direction: column;
+    row-gap: 2em;
+    align-items: center;
 }
 .main__google{
     width: fit-content;
 }
+
+/* ========= Main Box-Section Start =========*/
+.main__box{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 700px;
+    border: 1px solid;
+    border-radius: 30px;
+}
+.main__box__items{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+}
+.main__box__items-search{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0.1;
+}
+.main__box__items-input{
+    flex-grow: 4.5;
+}
+.main__box__items-input input{
+    height: 25px;
+    width: 100%;
+    border: none;
+}
+.main__box__items-keyboard{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0.1;
+}
+.main__box__items-mic{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0.1;
+}
+.main__box__items-lens{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0.1;
+}
+/* ========= Main Box-Section End =========*/
+
+.main__buttons{
+    display: flex;
+    gap: 1em;
+}
+.main__line{
+    margin-top: -20px;
+    font-weight: 400;
+}
+
+/* ========= Main Section End =========*/
+
+
+
+/* ========= Footer Section Start =========*/
 .footers{
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-weight: 700;
+    font-family:  "Roboto", sans-serif;
 }
 .footers__footer1{
     display: flex;
@@ -51,7 +142,6 @@ body{
     width: 97.5%;
 }
 .footers__footer2{
-    /* flex-grow: 1; */
     height: 100%;
     display: flex;
 }
@@ -80,3 +170,4 @@ body{
     align-items: center;
     gap: 2em;
 }
+/* ========= Footer Section End =========*/
